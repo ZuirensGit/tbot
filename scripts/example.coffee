@@ -25,12 +25,12 @@ module.exports = (robot) ->
   robot.hear /買酒/, (msg) ->
       msg.send msg.random ["你自己去", "小音去買", "叫主任去買", "Ryan不喝酒", "Andy需要酒快找人去買","老綁你喝太多惹"]
 
-  robot.hear /喝$/i,, (msg) ->
+  robot.hear /喝$/i, (msg) ->
       msg.send msg.random ["手搖茶", "啤酒", "咖啡" ,"氣泡水"]
 
 
-  # robot.hear /吃$/i, (msg) ->
-  #     msg.send msg.random ["小森", "燈籠滷味", "泰國菜", "豬排飯", "池上便當", "自助餐", "炒手麵", "阿英滷肉飯", "老黃牛肉麵", "師大牛肉麵", "Subway", "薩莉亞", "市民大道刷刷鍋", "泰順街麵店", "厝內", "老虎麵", "東門餃子館", "紅蜻蜓", "游壽司", "茶餐廳", "炸雞", "pizza" , "拉麵", "師大小廢物們" , "魚香茄子"]
+  robot.hear /吃$/i, (msg) ->
+      msg.send msg.random ["小森", "燈籠滷味", "泰國菜", "豬排飯", "池上便當", "自助餐", "炒手麵", "阿英滷肉飯", "老黃牛肉麵", "師大牛肉麵", "Subway", "薩莉亞", "市民大道刷刷鍋", "泰順街麵店", "厝內", "老虎麵", "東門餃子館", "紅蜻蜓", "游壽司", "茶餐廳", "炸雞", "pizza" , "拉麵", "師大小廢物們" ,"魚香茄子"]
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
