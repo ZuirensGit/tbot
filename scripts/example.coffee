@@ -8,7 +8,28 @@
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
+
 module.exports = (robot) ->
+  robot.hear /妳好/, (msg) ->
+    msg.send "有事嗎？"
+
+  robot.hear /你好/, (msg) ->
+      msg.send "幹嘛？"
+
+  robot.hear /誇張/, (msg) ->
+      msg.send "誇張"
+
+  robot.hear /你知道/, (msg) ->
+      msg.send "是喔~"
+
+  robot.hear /買酒/, (msg) ->
+      msg.send msg.random ["你自己去", "小音去買", "叫主任去買", "Ryan不喝酒", "Andy需要酒快找人去買"]
+
+  robot.hear /要喝/, (msg) ->
+      msg.send msg.random ["手搖茶", "啤酒", "咖啡"]
+
+  robot.hear /吃$/i, (msg) ->
+      msg.send msg.random ["小森", "燈籠滷味", "泰國菜", "豬排飯", "池上便當", "自助餐", "炒手麵", "阿英滷肉飯", "老黃牛肉麵", "師大牛肉麵", "Subway", "薩莉亞", "市民大道刷刷鍋", "泰順街麵店", "厝內", "老虎麵", "東門餃子館", "紅蜻蜓", "游壽司", "茶餐廳"]
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
