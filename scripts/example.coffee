@@ -25,7 +25,7 @@ module.exports = (robot) ->
   robot.hear /買酒/, (msg) ->
       msg.send msg.random ["你自己去", "小音去買", "叫主任去買", "Ryan不喝酒", "Andy需要酒快找人去買"]
 
-  robot.hear /要喝/, (msg) ->
+  robot.hear /喝$/i,, (msg) ->
       msg.send msg.random ["手搖茶", "啤酒", "咖啡"]
 
   robot.hear /吃$/i, (msg) ->
