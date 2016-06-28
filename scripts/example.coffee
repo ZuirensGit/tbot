@@ -16,6 +16,12 @@ module.exports = (robot) ->
   robot.hear /你好/, (msg) ->
       msg.send "幹嘛？"
 
+  robot.hear /沒事/, (msg) ->
+      msg.send "沒事還叫我！"
+
+  robot.hear /沒幹嘛/, (msg) ->
+        msg.send "那叫我幹嘛！"
+
   robot.hear /誇張/, (msg) ->
       msg.send "誇張"
 
